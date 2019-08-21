@@ -92,4 +92,23 @@ function deleted(item) {
   console.log(event);
   let element = document.getElementById("item" + item);
   element.classList.add("delete");
+  if (item === 1) {
+    prix1 = price1.textContent;
+    tab1 = prix1.split("");
+    prix11 = parseInt(tab1.filter(tab1 => tab1 != "$").join(""));
+    total = total - prix11;
+    document.getElementById("total").textContent = total;
+  } else if (item === 2) {
+    prix2 = price2.textContent;
+    tab2 = prix2.split("");
+    prix22 = parseInt(tab2.filter(tab2 => tab2 != "$").join(""));
+    total = total - prix22;
+    document.getElementById("total").textContent = total;
+  } else {
+    prix3 = price3.textContent;
+    tab3 = prix3.split("");
+    prix33 = parseInt(tab3.filter(tab3 => tab3 != "$").join(""));
+    total = total - prix33;
+    document.getElementById("total").textContent = total;
+  }
 }
