@@ -84,3 +84,12 @@ function decrement3() {
     document.getElementById("total").innerHTML = total;
   }
 }
+function liked(ele) {
+  var element = document.querySelector(".heart" + ele);
+  element.classList.toggle("liked");
+}
+function deleted(item) {
+  console.log(event);
+  let element = document.getElementById("item" + item);
+  element.classList.add("delete");
+}

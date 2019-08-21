@@ -12,7 +12,7 @@ body {
   background-color: #fff;
   margin-bottom: 100px;
   margin-top: 130px;
-  height: 400px;
+  height: auto;
   border-radius: 5px;
 }
 .product {
@@ -29,7 +29,7 @@ body {
   color: rgb(170, 184, 194);
 }
 .img-product {
-  width: 100px;
+  width: auto;
   height: 100px;
 }
 .button {
@@ -43,4 +43,11 @@ body {
 }
 #total {
   font-size: 18px;
+}
+.liked,
+.liked:hover {
+  color: red;
+}
+.delete {
+  display: none !important;
 }
